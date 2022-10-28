@@ -27,15 +27,9 @@ table th{
     min-width: 80px;
 }
 
-.button {
-    background-color: #78736b;
-}
-
 tr:nth-child(odd){
     background-color: #78736b;
 }
-
-
 
 td {
     width: 150px;
@@ -45,7 +39,7 @@ button {
     min-height: 30px;
     min-width: 100px;
     border-radius: 1em;
-    border-color: #F5F5EF;
+    border-color: #78736b;
 }
 
 h1 {

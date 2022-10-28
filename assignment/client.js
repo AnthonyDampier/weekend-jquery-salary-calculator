@@ -72,7 +72,6 @@ function render(){
             <td class="ID">ID</td>
             <td class="title">Title</td>
             <td class="annualSalary">Annual Salary</td>
-            <td></td>
         </tr>`
     )
     for( employee of employees){
@@ -92,7 +91,7 @@ function render(){
 
     $('.totalMonthly').empty();
     $('.totalMonthly').append(`
-    <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
+        <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
     `)
     
     $('input').val('');
