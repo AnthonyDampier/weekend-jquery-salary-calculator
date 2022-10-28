@@ -18,6 +18,7 @@ let employee = [
 
 function readyNow() {
     console.log(" JQ ");
+    //render();
     // records employee salaries
     $('#submit').on('click', addEmployeeInfo);
 
@@ -26,7 +27,6 @@ function readyNow() {
 
     // remove values of inputs on click
     $('input').on('click', emptyInput);
-
     
 }
 
@@ -66,13 +66,13 @@ function render(){
     //$('input').val('');
     console.group('Render:');
     $('.table').append(`
-        <tr>
-            <td class="firstName" >First Name</td>
+        <tr class="tableHead">
+            <td class="firstName">First Name</td>
             <td class="lastName">Last Name</td>
             <td class="ID">ID</td>
             <td class="title">Title</td>
             <td class="annualSalary">Annual Salary</td>
-            <td class="deleteButtons"></td>
+            <td></td>
         </tr>`
     )
     for( employee of employees){
@@ -92,7 +92,7 @@ function render(){
 
     $('.totalMonthly').empty();
     $('.totalMonthly').append(`
-        <h2>Monthly Total: $${Math.round(monthlyTotal*100)/100}</h2>
+    <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
     `)
     
     console.groupEnd();

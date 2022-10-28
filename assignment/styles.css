@@ -1,22 +1,54 @@
-table, th, td {
-    border: 2px solid;
-    border-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+body {
+    background-color: rgb(46, 50, 70);
+    font-family: 'Nunito', sans-serif;
+
+}
+div {
+    width:800px; 
+    margin:0 auto;
+    padding: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 3em;
+    background-color: #B69D74;
+}
+
+table th{
+    border: px solid black;
     background-color: aliceblue;
-    min-height: 30px;
-    min-width: 100px;
+    min-width: 80px;
+}
+
+td {
+    width: 150px;
+    border: 1px silver;
 }
 
 button {
     min-height: 30px;
     min-width: 100px;
+    border-radius: 1em;
+    border-color: #F5F5EF;
 }
 
-div {
-    padding: 40px;
-    background-color: black;
-    opacity: 40%;
+h1 {
+    text-align: center;
 }
 
-.inputs {
-    width: 800px;
+h2 {
+    font-size: 30px;
 }
+
+input {
+    height: 25px;
+    width: 100px;
+    border-radius: .5em;
+    font-weight: bold;
+}
+
+.tableHead {
+    font-weight: bold;
+}
+
