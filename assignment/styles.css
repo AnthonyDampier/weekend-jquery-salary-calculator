@@ -1,6 +1,7 @@
 table, th, td {
     border: 2px solid;
     border-color: black;
+    background-color: aliceblue;
     min-height: 30px;
     min-width: 100px;
 }
@@ -8,4 +9,14 @@ table, th, td {
 button {
     min-height: 30px;
     min-width: 100px;
+}
+
+div {
+    padding: 40px;
+    background-color: black;
+    opacity: 40%;
+}
+
+.inputs {
+    width: 800px;
 }

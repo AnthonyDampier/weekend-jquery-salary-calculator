@@ -34,11 +34,14 @@ function addEmployeeInfo() {
     console.group('submit');
     //add employee info
     let firstName = $('.inputFN').val();
-    console.log(firstName);
     let lastName = $('.inputLN').val();
     let id = $('.inputID').val();
     let title = $('.inputTitle').val();
     let annualSalary = $('.inputAS').val();
+    if (annualSalary === 'Annual Salary' || annualSalary === ''){
+        annualSalary = '0';
+    }
+
     employees.push({ firstName: firstName, lastName:lastName, ID: id, jobTitle: title, annualSalary: annualSalary});
     console.log('Employees array after pushing new object: ', employees)
     render();
