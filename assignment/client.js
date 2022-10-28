@@ -52,11 +52,13 @@ function emptyInput(){
     $(this).val('');
 }
 
-function deleteInput(){   
-    let i = $(this).val();
-    console.log(i);
-    employees.splice(i,1);
+function deleteInput(){  
+    console.groupCollapsed('DeleteInput'); 
+    console.log('Remove this items index.val()',$(this).val() ,'from array', $(this))
+    let indexToRemove = $(this).val();
+    employees.splice(indexToRemove,1);
     render();
+    console.groupEnd();
 }
 
 function render(){
