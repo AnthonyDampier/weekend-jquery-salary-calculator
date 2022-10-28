@@ -82,9 +82,7 @@ function render(){
         )
         index++
     }
-    $('.table').append(`
-    <tr>' '</tr>
-    `)
+    $('.totalMonthly').text('Sting');
     
     console.groupEnd();
 }
