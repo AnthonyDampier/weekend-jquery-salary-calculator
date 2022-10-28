@@ -5,6 +5,7 @@ body {
     font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 header {
     color:#B8B8AA;
     filter: drop-shadow(2px 2px 4px #423b30);
@@ -21,14 +22,12 @@ div {
     filter: drop-shadow(10px 10px 4px #191a15);
 }
 
-table th{
-    border: px solid black;
-    background-color: aliceblue;
-    min-width: 80px;
+table {
+    font-size: 18px;
 }
 
 tr:nth-child(odd){
-    background-color: #78736b;
+    background-color: #C1C1BD;
 }
 
 td {

@@ -111,6 +111,8 @@ function render(){
         // add class of .exceedMonthlyLimit to .totalMonthly 
     if (monthlyTotal > 20000){
         $('.totalMonthly').addClass('exceedMonthlyLimit');
+    } else {
+        $('.totalMonthly').removeClass('exceedMonthlyLimit');
     }
     $('input').val('');
     console.groupEnd();
