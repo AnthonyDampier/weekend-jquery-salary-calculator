@@ -95,5 +95,6 @@ function render(){
     <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
     `)
     
+    $('input').val('');
     console.groupEnd();
 }

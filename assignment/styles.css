@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 body {
-    background-color: rgb(46, 50, 70);
+    background-color: #284854;
     font-family: 'Nunito', sans-serif;
 }
+
+header {
+    color:#B8B8AA;
+    filter: drop-shadow(2px 2px 4px #423b30);
+}
+
 div {
     width:800px; 
     margin:0 auto;
@@ -11,7 +17,8 @@ div {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 3em;
-    background-color: #B69D74;
+    background-color: #8a8a82;
+    filter: drop-shadow(10px 10px 4px #191a15);
 }
 
 table th{
@@ -20,9 +27,18 @@ table th{
     min-width: 80px;
 }
 
+.button {
+    background-color: #78736b;
+}
+
+tr:nth-child(odd){
+    background-color: #78736b;
+}
+
+
+
 td {
     width: 150px;
-    border: 1px silver;
 }
 
 button {
@@ -50,4 +66,5 @@ input {
 .tableHead {
     font-weight: bold;
 }
+
 
