@@ -2,7 +2,7 @@
 
 body {
     background-color: #284854;
-    font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -24,6 +24,7 @@ div {
 
 table {
     font-size: 18px;
+    padding: 10px;
 }
 
 tr:nth-child(odd){
@@ -32,6 +33,15 @@ tr:nth-child(odd){
 
 td {
     width: 150px;
+}
+
+td.IDs {
+    width: 60px;
+}
+
+td.button, td.deleteButton {
+    background-color: #8a8a82;
+    width: 100px;
 }
 
 button {
@@ -58,6 +68,11 @@ input {
 
 .tableHead {
     font-weight: bold;
+}
+
+.totalMonthly {
+    text-align: right;
+    padding-right: 55px;
 }
 
 .totalMonthly.exceedMonthlyLimit {
