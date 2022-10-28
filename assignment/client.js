@@ -2,6 +2,7 @@ $(document).ready(readyNow);
 
 // Global variables
 let employees = [];
+let monthlyTotal = 0;
 
 /*
 let employee = [
@@ -57,7 +58,9 @@ function deleteInput(){
 
 function render(){
     let index = 0;
+    let monthlyTotal = 0
     $('.table').empty();
+    //$('input').val('');
     console.group('Render:');
     $('.table').append(`
         <tr>
@@ -76,13 +79,18 @@ function render(){
             <td class="lastName">${employee.lastName}</td>
             <td class="ID">${employee.ID}</td>
             <td class="title">${employee.jobTitle}</td>
-            <td class="annualSalary">${employee.annualSalary}</td>
+            <td class="annualSalary">$${employee.annualSalary}</td>
             <td><button class="deleteButton" value="${index}">Delete</button></td>
         </tr>`
         )
         index++
+        monthlyTotal += (employee.annualSalary/12);
     }
-    $('.totalMonthly').text('Sting');
+
+    $('.totalMonthly').empty();
+    $('.totalMonthly').append(`
+        <h2>Monthly Total: $${Math.round(monthlyTotal*100)/100}</h2>
+    `)
     
     console.groupEnd();
 }
