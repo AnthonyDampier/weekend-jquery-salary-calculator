@@ -2,7 +2,7 @@
 
 body {
     background-color: #284854;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -24,7 +24,6 @@ div {
 
 table {
     font-size: 18px;
-    padding: 10px;
 }
 
 tr:nth-child(odd){
@@ -41,7 +40,7 @@ td.IDs {
 
 td.button, td.deleteButton {
     background-color: #8a8a82;
-    width: 100px;
+    width: 50px;
 }
 
 button {

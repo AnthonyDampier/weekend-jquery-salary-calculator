@@ -51,7 +51,7 @@ function addEmployeeInfo() {
     }
     let annualSalary = $('.inputAS').val();
     if (annualSalary === 'Annual Salary' || annualSalary === ''){
-        annualSalary = '0';
+        annualSalary = '0.00';
     }
 
     employees.push({ firstName: firstName, lastName:lastName, ID: id, jobTitle: title, annualSalary: annualSalary});
@@ -96,7 +96,7 @@ function render(){
             <td class="ID">${employee.ID}</td>
             <td class="title">${employee.jobTitle}</td>
             <td class="annualSalary">$${employee.annualSalary}</td>
-            <td><button class="deleteButton" value="${index}">Delete</button></td>
+            <td class="button"><button class="deleteButton" value="${index}">Delete</button></td>
         </tr>`
         )
         index++
