@@ -34,9 +34,21 @@ function addEmployeeInfo() {
     console.group('submit');
     //add employee info
     let firstName = $('.inputFN').val();
+    if (firstName === ''){
+        firstName = '-';
+    }
     let lastName = $('.inputLN').val();
+    if (lastName === ''){
+        lastName = '-';
+    }
     let id = $('.inputID').val();
+    if (id === ''){
+        id = '####';
+    }
     let title = $('.inputTitle').val();
+    if (title === ''){
+        title = '-';
+    }
     let annualSalary = $('.inputAS').val();
     if (annualSalary === 'Annual Salary' || annualSalary === ''){
         annualSalary = '0';
