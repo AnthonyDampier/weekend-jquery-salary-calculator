@@ -31,7 +31,7 @@ function readyNow() {
 }
 
 function addEmployeeInfo() {
-    console.group('submit');
+    console.groupCollapsed('submit');
     //add employee info
     let firstName = $('.inputFN').val();
     if (firstName === ''){
@@ -78,7 +78,7 @@ function render(){
     let monthlyTotal = 0
     $('.table').empty();
     //$('input').val('');
-    console.group('Render:');
+    console.groupCollapsed('Render:');
     $('.table').append(`
         <tr class="tableHead">
             <td class="firstName">First Name</td>
