@@ -61,4 +61,8 @@ input {
     font-weight: bold;
 }
 
+.totalMonthly.exceedMonthlyLimit {
+    color: red;
+}
+
 

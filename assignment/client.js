@@ -107,7 +107,11 @@ function render(){
     $('.totalMonthly').append(`
         <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
     `)
-    
+    // If monthly cost exceeds $20000; change <h2>Total Monthly<h2> background to red
+        // add class of .exceedMonthlyLimit to .totalMonthly 
+    if (monthlyTotal > 20000){
+        $('.totalMonthly').addClass('exceedMonthlyLimit');
+    }
     $('input').val('');
     console.groupEnd();
 }
