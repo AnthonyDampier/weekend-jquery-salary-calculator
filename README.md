@@ -1,9 +1,11 @@
-# Project Name
+# Duration: 8-10 hours over a four day period
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Project Name: 
+
+Salary Calc
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This Salary Calculator will provide users with a convenient experience to quickly know their Monthly Employee Salary Expense. A functionality recording is available [here](Screen-shot-salary-calc.png)
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
