@@ -73,6 +73,7 @@ function deleteInput(){
     console.groupEnd();
 }
 
+
 function render(){
     let index = 0;
     let monthlyTotal = 0
@@ -103,7 +104,10 @@ function render(){
         monthlyTotal += (employee.annualSalary/12);
     }
 
+    //empty .totalMonthly html
     $('.totalMonthly').empty();
+
+    // append new information
     $('.totalMonthly').append(`
         <h2>Total Monthly: $${Math.round(monthlyTotal*100)/100}</h2>
     `)
